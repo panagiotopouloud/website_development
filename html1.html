@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background:#031C34;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  color:#ddd;
+  background-image:url(snowicet.png);
+  background:fill;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: center;
+  width: 100%;
+  color:#ddd
+}
+
+ 
+
+/* Fake image */
+.fakeimg {
+  background-image:url(fakeimg1.png);
+  width: 100%;
+  padding: 20px;
+}
+
+.fakeimg2 {
+  background-image:url(fakeimg2.png);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #333;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #333;
+  margin-top: 20px;
+  color:#ddd
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Holiday planner</h1>
+  <p>Plan your winter holiday today</p>
+</div>
+
+<div class="topnav">
+  <a href="#">home</a>
+  <a href="#">packages</a>
+  <a href="#">news</a>
+  <a href="#" style="float:right">profile</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Five days in Iceland</h2>
+      <h5>An adventurous trip to iceland, Dec 5, 2022</h5>
+      <div class="fakeimg" style="height:200px;">aurora lights</div>
+      <p>Spent your winter holidays in the most beautiful winter destination</p>
+      <p>Five wonderful days in iceland, watch the aurora lights, make a sled, watch reindeers and many more.NOW 700$ per person. Contact us for several informations and bookings.</p>
+    </div>
+    <div class="card">
+      <h2>Four days in the Alps</h2>
+      <h5>skiing holidays in the Alps, Dec 3, 2022</h5>
+      <div class="fakeimg2" style="height:200px;">skiing in the Alps</div>
+      <p>An exciting skiing holiday </p>
+      <p>Four days full of skiing in the Alps.An unforgettable expierience for everyone.Skiing lessons as well as the equipement will be provided.NOW 650$ per person. Contact us for several informations and bookings. </p>
+    </div>
+  </div>
+  
+
+<div class="footer">
+  <h2>Contact us</h2>
+  <h5>phone:214365<br>e-mail:planyourtrip@plan.com<br>instagram:@plantriptoday
+  </h5>
+</div>
+
+</body>
+</html>
