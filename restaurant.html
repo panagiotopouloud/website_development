@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title>sunny all day bar</title>
+    <meta charset="utf-8">
+<style>
+    * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family:sans-serif;
+        background:#efeb8d;
+      }
+
+      /*header*/
+    .header {
+        padding: 20px;
+        text-align: center;
+        font-size: 140%;
+        color:#94620c;
+        background-image:url(sunny4.png);
+        background:fill;
+      }
+
+      /*navigation bar*/
+    .topnav {
+        overflow: hidden;
+        background-color: #94620c;
+      }
+ 
+      /*navigation bar links*/
+    .topnav a {
+        float: left;
+        display: block;
+        color:moccasin;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /*navigation bar interaction*/
+    .topnav a:hover {
+        background-color:orange;
+        color: black;
+      }
+    
+      /*right card*/
+    .rightcolumn {   
+        float: right;
+        width: 27%;
+        color:#ddd
+        
+      }
+
+      /*left cards*/
+    .leftcolumn {   
+        float: left;
+        width: 70%;
+        color:#ddd
+      }
+
+      /*fake image 1*/
+    .fakeimg {
+        background-image:url(drink1.jpg);
+        width:100%;
+         
+      }
+      
+      /*fake image 2*/
+    .fakeimg2 {
+        background-image:url(drink2.jpg);
+        width: 100%;
+      }
+
+      /*fake image 3*/
+    .fakeimg3{
+        background-image:url(volley.png);
+      }
+      
+      /* Add a card effect for articles */
+    .card {
+        background-color:#94620c;
+        padding: 20px;
+        margin-top: 20px;
+        text-align: center;
+      }
+      
+      /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Footer */
+    .footer {
+        padding: 20px;
+        text-align: center;
+        background: #94620c;
+        margin-top: 20px;
+        color:#ddd
+      }
+</style>
+</head>
+<body>
+    <div class="header">
+            <p>Sunny all day bar</p>
+    </div>
+
+    <div class="topnav">
+        <a href="#">menu</a>
+        <a href="#">jobs</a>
+        <a href="#">news</a>
+        <a href="#" style="float:right">home</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>Cherry lime cocktail</h2>
+            <h5> 7$</h5>
+            <div class="fakeimg" style="height:200px;"></div>
+            <p>An excotic cocktail made of the best quality white rum, natural cherry and lime juice.Perfect to cool down under the hot sun.</p>
+          </div>
+          <div class="card">
+            <h2>fruit punch cocktail</h2>
+            <h5> 8$</h5>
+            <div class="fakeimg2" style="height:200px;"></div>
+            <p>A fruity cocktail made of top quality vodka, hawaiian punch, spicy ginger beer, natural pineapple and orange juice.</p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h3 style="color:yellow;">Beach volley turnament <Br> Friday 15 August!!!</h3>
+                <div class="fakeimg3" style="height:740px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+            reservations:1234567<br>
+            e-mail:sunnyalldaybar@thismail.com
+    </div>
+
+</body>
+</html>
